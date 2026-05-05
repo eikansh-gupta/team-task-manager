@@ -1,12 +1,14 @@
 # Team Task Manager (Full-Stack)
 
-Assignment-ready full-stack app with authentication, project/team management, task tracking, dashboard summary, and role-based access support.
+A full-stack team collaboration application that enables users to manage projects, assign tasks, and track progress with role-based access and real-time dashboard insights.
 
-## Recommended Languages by Section
+## 🧩 Tech Stack
 
-- Frontend: **TypeScript + React**
-- Backend API: **TypeScript + Node.js (Express)**
-- Database: **Microsoft SQL Server** locally (via SSMS connection), or **PostgreSQL** on Railway (switch Prisma provider + URL — see below)
+- Frontend: React + TypeScript (Vite)
+- Backend: Node.js + Express (TypeScript)
+- ORM: Prisma
+- Database: SQL Server / PostgreSQL
+- Auth: JWT + bcrypt
 
 ## Implemented Features
 
@@ -46,7 +48,7 @@ Assignment-ready full-stack app with authentication, project/team management, ta
 
 Copy from `.env.example` into `backend/.env`, then edit values.
 
-Default in this repo is **SQL Server** (SSMS):
+By default, the application uses SQL Server for local development.
 
 ```bash
 PORT=4000
@@ -144,9 +146,18 @@ Deployment-ready configs included:
    - dashboard metrics.
 8. Add final live URLs + demo link in this README.
 
+## 🌐 Live Links
+
+- Frontend: https://your-frontend-url
+- Backend: https://your-backend-url
+
 ## Demo Recording Help
 
 - Use `DEMO_SCRIPT.md` for a clean 2-5 minute walkthrough.
+
+  ## 🎬 Demo Video
+
+[Watch Demo](https://your-video-link)
 
 ## Submission Checklist
 
