@@ -27,6 +27,12 @@ app.get("/health", (_req, res) => {
   res.status(200).json({ ok: true, service: "team-task-manager-api" });
 });
 
-app.listen(port, () => {
-  console.log(`API running at http://localhost:${port}`);
+// app.listen(port, () => {
+//   console.log(`API running at http://localhost:${port}`);
+// });
+
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
