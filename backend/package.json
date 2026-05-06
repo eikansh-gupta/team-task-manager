@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:migrate:deploy": "prisma migrate deploy"
-  },
+  "dev": "tsx watch src/index.ts",
+  "build": "npx prisma generate --schema=prisma/schema.prod.prisma && tsc -p tsconfig.json",
+  "start": "npx prisma migrate deploy --schema=prisma/schema.prod.prisma && node dist/index.js",
+  "prisma:generate": "prisma generate",
+  "prisma:migrate": "prisma migrate dev",
+  "prisma:migrate:deploy": "prisma migrate deploy"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
